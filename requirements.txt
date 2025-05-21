@@ -4,4 +4,3 @@ numpy
 openai
 tiktoken
 scikit-learn
-tensorflow-cpu
