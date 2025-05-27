@@ -3,7 +3,6 @@ import pandas as pd
 import openai
 import os
 import automate
-import clustering
 import tempfile
 import zipfile
 
@@ -77,7 +76,7 @@ if cluster_files and st.button("Generate Prompts from Cluster Files"):
     results = []
     for uploaded_file in cluster_files:
         try:
-            prompt_text = clustering.process_file(uploaded_file.read())
+            prompt_text = automate.process_file(uploaded_file.read())
             results.append({"term": uploaded_file.name, "prompt": prompt_text})
         except Exception as e:
             results.append({"term": uploaded_file.name, "prompt": f"Error: {str(e)}"})
