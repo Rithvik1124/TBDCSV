@@ -28,8 +28,8 @@ step1_files = st.file_uploader("Upload exactly 3 CSV files", type="csv", accept_
 if step1_files and len(step1_files) == 3:
     if st.button("Upload and Merge"):
         # Save files to temp locations
-        with tempfile.NamedTemporaryFile(delete=False, suffix=".csv") as f1, 
-             tempfile.NamedTemporaryFile(delete=False, suffix=".csv") as f2,
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".csv") as f1, \
+             tempfile.NamedTemporaryFile(delete=False, suffix=".csv") as f2, \
              tempfile.NamedTemporaryFile(delete=False, suffix='.csv') as f3:
             f1.write(step1_files[0].read())
             f2.write(step1_files[1].read())
