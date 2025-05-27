@@ -16,7 +16,7 @@ st.header("Step 1: Enter Values")
 #Weights and Conversion Rates
 hist_weight = st.number_input("Enter Historical Weight:",value=0.6,step=0.1)
 monthly_weight = st.number_input("Enter Monthly Weight:",value=0.4,step=0.1)
-clinics = st.number_input("Enter number of Clinics:",value=35,,step=1)
+clinics = st.number_input("Enter number of Clinics:",value=35,step=1)
 hist_conversion_rate = st.number_input("Enter Historical Conversion Rate:",value=0.1119,step=0.0001)
 month_conversion_rate = st.number_input("Enter Monthly Conversion Rate:",value=0.0,step=0.1)
 
